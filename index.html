@@ -3,11 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#090b12">
-  <meta name="description" content="Play free online browser games on SANVIO GAMES. Discover arcade, puzzle, racing and brain games on mobile and desktop.">
-  <meta property="og:title" content="SANVIO GAMES — Play Beyond Limits">
-  <meta property="og:description" content="A universe of free browser games. No downloads. Just play.">
-  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#080711">
+  <meta name="description" content="Play free online browser games on SANVIO GAMES. Discover arcade, puzzle, racing and brain games on every device.">
   <title>SANVIO GAMES — Play Beyond Limits</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,74 +12,42 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="ambient ambient-one"></div>
-  <div class="ambient ambient-two"></div>
   <header class="site-header">
-    <a class="brand" href="./" aria-label="SANVIO GAMES home">
-      <span class="brand-mark"><span></span><span></span><span></span></span>
-      <span>SANVIO<span class="brand-accent"> GAMES</span></span>
-    </a>
+    <a class="brand" href="#home" aria-label="SANVIO GAMES home"><span class="brand-mark"><span></span><span></span><span></span></span><span>SANVIO<span class="brand-accent"> GAMES</span></span></a>
     <nav class="desktop-nav" aria-label="Main navigation">
-      <a class="nav-link active" href="#home">Discover</a>
-      <a class="nav-link" href="#games">All games</a>
-      <a class="nav-link" href="#categories">Categories</a>
+      <a class="nav-link active" href="#home">Discover</a><a class="nav-link" href="#games">All games</a><a class="nav-link" href="#categories">Categories</a><a class="nav-link" href="#community">Community</a>
     </nav>
-    <div class="header-actions">
-      <button class="icon-button" id="searchToggle" aria-label="Focus game search" title="Search games">⌕</button>
-      <a class="header-cta" href="#games">Play now <span>↗</span></a>
-      <button class="mobile-menu-button" id="mobileMenuButton" aria-label="Open menu" aria-expanded="false">☰</button>
-    </div>
+    <div class="header-actions"><button class="icon-button" id="searchToggle" aria-label="Search games">⌕</button><a class="header-cta" href="#games">Play now <span>↗</span></a><button class="mobile-menu-button" id="mobileMenuButton" aria-label="Go to games" aria-expanded="false">☰</button></div>
   </header>
 
   <main id="home">
-    <section class="visual-hero section-wrap">
-      <img src="01-home-hero.webp" alt="SANVIO GAMES cyberpunk arcade world" fetchpriority="high">
-      <a class="visual-hero-cta" href="#games">EXPLORE GAMES <span>↗</span></a>
+    <section class="hero-section section-wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> PLAY • EXPLORE • CHALLENGE • WIN</div>
+        <h1>PLAY BEYOND<br><span class="gradient-text">LIMITS.</span></h1>
+        <p class="hero-description">Enter the SANVIO arcade. Discover 10 exciting browser games, chase your high score and play anywhere. No downloads. Just pure fun.</p>
+        <div class="hero-actions"><a class="primary-button" href="#games">Explore games <span>→</span></a><span class="hero-proof">10 game worlds · One place to play</span></div>
+        <div class="hero-meta"><span>INSTANT PLAY</span><span>·</span><span>DESKTOP + MOBILE</span><span>·</span><span>FREE TO EXPLORE</span></div>
+      </div>
+      <div class="hero-artwork"><img src="03-featured-endless-runner.webp" alt="Neon futuristic Endless Runner game world"><div class="hero-art-label"><span>FEATURED WORLD</span><strong>ENDLESS RUNNER</strong></div></div>
     </section>
 
-    <section class="visual-divider section-wrap">
-      <img src="02-game-collection-divider.webp" alt="Choose your next gaming challenge">
-    </section>
+    <section class="visual-divider section-wrap"><img src="02-game-collection-divider.webp" alt="Explore the SANVIO game collection"></section>
 
     <section class="games-section section-wrap" id="games">
-      <div class="section-heading">
-        <div><div class="eyebrow">THE ARCADE COLLECTION</div><h2>Find your <span class="gradient-text">next obsession.</span></h2><p>Small breaks. Big challenges. All in your browser.</p></div>
-        <label class="search-box" for="gameSearch"><span>⌕</span><input id="gameSearch" type="search" placeholder="Search games..." autocomplete="off"><kbd>/</kbd></label>
-      </div>
-      <div class="filter-row" id="categories" aria-label="Filter games">
-        <button class="filter-chip selected" data-filter="all">All games <span>10</span></button>
-        <button class="filter-chip" data-filter="arcade">Arcade</button>
-        <button class="filter-chip" data-filter="racing">Racing</button>
-        <button class="filter-chip" data-filter="puzzle">Puzzle</button>
-        <button class="filter-chip" data-filter="brain">Brain</button>
-      </div>
-      <div class="cards-showcase"><img src="04-popular-games-cards.webp" alt="Explore the SANVIO GAMES collection"></div>\n      <div class="games-grid" id="gamesGrid" aria-live="polite"></div>
+      <div class="section-heading"><div><div class="eyebrow">THE ARCADE COLLECTION</div><h2>Choose your next <span class="gradient-text">challenge.</span></h2><p>Quick breaks. Big challenges. Find your next favourite.</p></div><label class="search-box" for="gameSearch"><span>⌕</span><input id="gameSearch" type="search" placeholder="Search games..." autocomplete="off"><kbd>/</kbd></label></div>
+      <div class="filter-row" id="categories" aria-label="Filter games"><button class="filter-chip selected" data-filter="all">All games <span>10</span></button><button class="filter-chip" data-filter="arcade">Arcade</button><button class="filter-chip" data-filter="racing">Racing</button><button class="filter-chip" data-filter="puzzle">Puzzle</button><button class="filter-chip" data-filter="brain">Brain</button></div>
+      <div class="games-grid" id="gamesGrid" aria-live="polite"></div>
       <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>No games found</h3><p>Try another title or category.</p></div>
     </section>
 
-    <section class="visual-feature section-wrap">
-      <img src="03-featured-endless-runner.webp" alt="Featured game: Endless Runner">
-      <a class="visual-feature-link" href="#games">DISCOVER THE GAME <span>→</span></a>
-    </section>
+    <section class="collection-banner section-wrap"><img src="04-popular-games-cards.webp" alt="Popular SANVIO games collection"></section>
+    <section class="visual-info section-wrap"><div class="info-art"><img src="05-leaderboard.webp" alt="Leaderboard and high score challenge"></div><div class="info-art"><img src="06-how-to-play.webp" alt="How to play SANVIO games on your devices"></div></section>
 
-    <section class="visual-info section-wrap">
-      <img src="05-leaderboard.webp" alt="Challenge your best score">
-      <img src="06-how-to-play.webp" alt="Play on desktop, tablet and mobile">
-    </section>
-
-    <section class="promo-section section-wrap">
-      <img class="promo-banner-art" src="07-community-cta.webp" alt="Join the SANVIO GAMES community">
-      <div class="promo-card">
-        <div class="promo-copy"><div class="eyebrow">MADE FOR THE MOMENT</div><h2>One more round?<br><span class="gradient-text">Always.</span></h2><p>Take a quick break, beat your best score and come back stronger. Your next challenge is one tap away.</p><a href="#games" class="text-link">Choose your game <span>→</span></a></div>
-        <div class="promo-visual"><div class="promo-ring"></div><div class="promo-token token-one">✦</div><div class="promo-token token-two">↗</div><div class="promo-token token-three">◈</div><div class="promo-center">PLAY<br><b>MORE</b></div></div>
-      </div>
-    </section>
+    <section class="community-section section-wrap" id="community"><img src="07-community-cta.webp" alt="" class="community-art"><div class="community-copy"><div class="eyebrow">MADE FOR THE MOMENT</div><h2>One more round?<br><span class="gradient-text">Always.</span></h2><p>Take a quick break, beat your best score and come back stronger. Your next challenge is one tap away.</p><a class="primary-button" href="#games">Choose your game <span>→</span></a></div></section>
   </main>
 
-  <footer class="site-footer">\n    <img class="footer-banner-art" src="08-footer.webp" alt="SANVIO GAMES">
-    <div class="footer-main section-wrap"><a class="brand" href="./"><span class="brand-mark"><span></span><span></span><span></span></span><span>SANVIO<span class="brand-accent"> GAMES</span></span></a><p>Play beyond limits. Built for curious minds and high-score chasers.</p><div class="footer-links"><a href="#games">Games</a><a href="#categories">Categories</a><a href="mailto:hello@sanvio.com">Contact</a></div></div>
-    <div class="footer-bottom section-wrap"><span>© <span id="year"></span> SANVIO GAMES. All rights reserved.</span><span>PLAY FAIR. HAVE FUN.</span></div>
-  </footer>
+  <footer class="site-footer"><img class="footer-banner-art" src="08-footer.webp" alt="SANVIO GAMES"><div class="footer-main section-wrap"><a class="brand" href="#home"><span class="brand-mark"><span></span><span></span><span></span></span><span>SANVIO<span class="brand-accent"> GAMES</span></span></a><p>Play beyond limits. Built for curious minds and high-score chasers.</p><div class="footer-links"><a href="#games">Games</a><a href="#categories">Categories</a><a href="mailto:hello@sanvio.com">Contact</a></div></div><div class="footer-bottom section-wrap"><span>© <span id="year"></span> SANVIO GAMES. All rights reserved.</span><span>PLAY FAIR. HAVE FUN.</span></div></footer>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="js/app.js"></script>
 </body>
