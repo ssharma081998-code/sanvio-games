@@ -29,7 +29,7 @@ function renderGames() {
 
   grid.innerHTML = visible.map((game, index) => `
     <article class="game-card">
-      <div class="game-art" style="--art-bg:${game.background};--game-image:url(${game.image})">
+      <div class="game-art" style="--game-image:url(${game.image})">
         <span class="art-index">GAME ${String(games.indexOf(game) + 1).padStart(2, "0")}</span>
         <span class="art-tag">${game.label}</span>
         <span class="art-symbol" aria-hidden="true">${game.symbol}</span>
