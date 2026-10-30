@@ -1,54 +1,16 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#080711">
-  <meta name="description" content="Play free online browser games on SANVIO GAMES. Discover arcade, puzzle, racing and brain games on every device.">
-  <title>SANVIO GAMES — Play Beyond Limits</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="SANVIO GAMES home"><span class="brand-mark"><span></span><span></span><span></span></span><span>SANVIO<span class="brand-accent"> GAMES</span></span></a>
-    <nav class="desktop-nav" aria-label="Main navigation">
-      <a class="nav-link active" href="#home">Discover</a><a class="nav-link" href="#games">All games</a><a class="nav-link" href="#categories">Categories</a><a class="nav-link" href="#community">Community</a>
-    </nav>
-    <div class="header-actions"><button class="icon-button" id="searchToggle" aria-label="Search games">⌕</button><a class="header-cta" href="#games">Play now <span>↗</span></a><button class="mobile-menu-button" id="mobileMenuButton" aria-label="Go to games" aria-expanded="false">☰</button></div>
-  </header>
-
-  <main id="home">
-    <section class="hero-section section-wrap">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="live-dot"></span> PLAY • EXPLORE • CHALLENGE • WIN</div>
-        <h1>PLAY BEYOND<br><span class="gradient-text">LIMITS.</span></h1>
-        <p class="hero-description">Enter the SANVIO arcade. Discover 10 exciting browser games, chase your high score and play anywhere. No downloads. Just pure fun.</p>
-        <div class="hero-actions"><a class="primary-button" href="#games">Explore games <span>→</span></a><span class="hero-proof">10 game worlds · One place to play</span></div>
-        <div class="hero-meta"><span>INSTANT PLAY</span><span>·</span><span>DESKTOP + MOBILE</span><span>·</span><span>FREE TO EXPLORE</span></div>
-      </div>
-      <div class="hero-artwork"><img src="03-featured-endless-runner.webp" alt="Neon futuristic Endless Runner game world"><div class="hero-art-label"><span>FEATURED WORLD</span><strong>ENDLESS RUNNER</strong></div></div>
-    </section>
-
-    <section class="visual-divider section-wrap"><img src="02-game-collection-divider.webp" alt="Explore the SANVIO game collection"></section>
-
-    <section class="games-section section-wrap" id="games">
-      <div class="section-heading"><div><div class="eyebrow">THE ARCADE COLLECTION</div><h2>Choose your next <span class="gradient-text">challenge.</span></h2><p>Quick breaks. Big challenges. Find your next favourite.</p></div><label class="search-box" for="gameSearch"><span>⌕</span><input id="gameSearch" type="search" placeholder="Search games..." autocomplete="off"><kbd>/</kbd></label></div>
-      <div class="filter-row" id="categories" aria-label="Filter games"><button class="filter-chip selected" data-filter="all">All games <span>10</span></button><button class="filter-chip" data-filter="arcade">Arcade</button><button class="filter-chip" data-filter="racing">Racing</button><button class="filter-chip" data-filter="puzzle">Puzzle</button><button class="filter-chip" data-filter="brain">Brain</button></div>
-      <div class="games-grid" id="gamesGrid" aria-live="polite"></div>
-      <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>No games found</h3><p>Try another title or category.</p></div>
-    </section>
-
-    <section class="collection-banner section-wrap"><img src="04-popular-games-cards.webp" alt="Popular SANVIO games collection"></section>
-    <section class="visual-info section-wrap"><div class="info-art"><img src="05-leaderboard.webp" alt="Leaderboard and high score challenge"></div><div class="info-art"><img src="06-how-to-play.webp" alt="How to play SANVIO games on your devices"></div></section>
-
-    <section class="community-section section-wrap" id="community"><img src="07-community-cta.webp" alt="" class="community-art"><div class="community-copy"><div class="eyebrow">MADE FOR THE MOMENT</div><h2>One more round?<br><span class="gradient-text">Always.</span></h2><p>Take a quick break, beat your best score and come back stronger. Your next challenge is one tap away.</p><a class="primary-button" href="#games">Choose your game <span>→</span></a></div></section>
-  </main>
-
-  <footer class="site-footer"><img class="footer-banner-art" src="08-footer.webp" alt="SANVIO GAMES"><div class="footer-main section-wrap"><a class="brand" href="#home"><span class="brand-mark"><span></span><span></span><span></span></span><span>SANVIO<span class="brand-accent"> GAMES</span></span></a><p>Play beyond limits. Built for curious minds and high-score chasers.</p><div class="footer-links"><a href="#games">Games</a><a href="#categories">Categories</a><a href="mailto:hello@sanvio.com">Contact</a></div></div><div class="footer-bottom section-wrap"><span>© <span id="year"></span> SANVIO GAMES. All rights reserved.</span><span>PLAY FAIR. HAVE FUN.</span></div></footer>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="js/app.js"></script>
-</body>
-</html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080711"><meta name="description" content="Discover SANVIO GAMES — a neon arcade of free browser games."><title>SANVIO GAMES — Play Beyond Limits</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head>
+<body><div class="site-noise" aria-hidden="true"></div>
+<header class="topbar"><a class="brand" href="#home"><span class="brand-icon">S</span><span>SANVIO <b>GAMES</b></span></a><nav class="main-nav"><a class="active" href="#home">Discover</a><a href="#games">All games</a><a href="#categories">Categories</a><a href="#leaderboard">Leaderboard</a></nav><div class="top-actions"><button class="search-trigger" id="searchToggle" aria-label="Search games">⌕</button><a class="button button-light" href="#games">Play now <span>↗</span></a><button class="menu-trigger" id="mobileMenuButton" aria-label="Open menu">☰</button></div></header>
+<main id="home">
+<section class="hero section-shell"><div class="hero-text"><div class="eyebrow"><i></i> YOUR NEXT GAME STARTS HERE</div><h1>PLAY BEYOND<br><span class="gradient-word">LIMITS.</span></h1><p class="hero-lead">A universe of quick thrills, clever puzzles and high-score battles. Jump into the SANVIO arcade and find your next obsession.</p><div class="hero-buttons"><a class="button button-gradient" href="#games">Explore games <span>→</span></a><a class="quiet-link" href="#how-to-play">How to play <span>↗</span></a></div><div class="hero-facts"><span>10 GAME WORLDS</span><span>NO DOWNLOADS</span><span>PLAY ANYWHERE</span></div></div><div class="hero-visual"><div class="hero-image-frame"><img src="09-game-endless-runner.webp" alt="Endless Runner neon game artwork"></div><div class="hero-float-card"><span class="float-icon">✦</span><div><small>FEATURED WORLD</small><strong>Endless Runner</strong></div><span class="float-arrow">↗</span></div><div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div></div><div class="hero-scroll">SCROLL TO EXPLORE <span>↓</span></div></section>
+<section class="ticker"><div class="ticker-track"><span>✦ ARCADE ACTION</span><span>✦ PUZZLE YOUR MIND</span><span>✦ BEAT YOUR BEST</span><span>✦ PLAY ANYWHERE</span><span>✦ ARCADE ACTION</span><span>✦ PUZZLE YOUR MIND</span><span>✦ BEAT YOUR BEST</span><span>✦ PLAY ANYWHERE</span></div></section>
+<section class="collection-intro section-shell"><div><div class="eyebrow">ENTER THE ARCADE</div><h2>Pick a world.<br><span class="gradient-word">Make it yours.</span></h2></div><p>From fast reflexes to brain-teasing puzzles, there’s always another challenge waiting. Choose your game and chase a new high score.</p></section>
+<section class="divider-art section-shell"><img src="02-game-collection-divider.webp" alt="SANVIO GAMES collection banner"></section>
+<section class="games-section section-shell" id="games"><div class="section-title-row"><div><div class="eyebrow">THE GAME LIBRARY</div><h2>Find your <span class="gradient-word">next obsession.</span></h2></div><label class="game-search"><span>⌕</span><input id="gameSearch" type="search" placeholder="Search games..." autocomplete="off"><kbd>/</kbd></label></div><div class="filter-row" id="categories"><button class="filter-chip selected" data-filter="all">All games <b>10</b></button><button class="filter-chip" data-filter="arcade">Arcade</button><button class="filter-chip" data-filter="racing">Racing</button><button class="filter-chip" data-filter="puzzle">Puzzle</button><button class="filter-chip" data-filter="brain">Brain</button></div><div class="games-grid" id="gamesGrid" aria-live="polite"></div><div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>No games found</h3><p>Try a different search or category.</p></div></section>
+<section class="showcase section-shell"><img src="04-popular-games-cards.webp" alt="Popular SANVIO GAMES showcase"><div class="showcase-caption"><span>THE ARCADE NEVER SLEEPS</span><strong>Find your next favourite.</strong></div></section>
+<section class="featured section-shell"><div class="featured-art"><img src="03-featured-endless-runner.webp" alt="Featured game Endless Runner"><span class="featured-pill">FEATURED GAME · 01</span></div><div class="featured-copy"><div class="eyebrow">THE SPOTLIGHT IS YOURS</div><h2>One run.<br><span class="gradient-word">Infinite chances.</span></h2><p>Get ready to dodge, sprint and push your reflexes to the limit. Endless Runner leads the SANVIO spotlight.</p><a class="text-arrow" href="#games">Explore the collection <span>→</span></a></div></section>
+<section class="score-how section-shell"><div class="section-heading"><div class="eyebrow">LEVEL UP YOUR EXPERIENCE</div><h2>Play. Improve. <span class="gradient-word">Repeat.</span></h2></div><div class="two-visuals"><figure id="leaderboard"><img src="05-leaderboard.webp" alt="SANVIO leaderboard design"><figcaption><b>CHASE THE HIGH SCORE</b><span>Every round is a new chance to beat your best.</span></figcaption></figure><figure id="how-to-play"><img src="06-how-to-play.webp" alt="How to play on desktop and mobile"><figcaption><b>MADE FOR EVERY SCREEN</b><span>Pick up and play on desktop, tablet or mobile.</span></figcaption></figure></div></section>
+<section class="community section-shell" id="community"><img src="07-community-cta.webp" alt="" class="community-bg"><div class="community-content"><div class="eyebrow">YOUR NEXT ROUND IS WAITING</div><h2>Ready when<br><span class="gradient-word">you are.</span></h2><p>Take a quick break, challenge yourself and come back for one more round. The arcade is always open.</p><a class="button button-gradient" href="#games">Choose your game <span>→</span></a></div></section>
+</main>
+<footer class="footer"><img class="footer-art" src="08-footer.webp" alt="SANVIO GAMES footer artwork"><div class="footer-main section-shell"><div class="footer-brand"><a class="brand" href="#home"><span class="brand-icon">S</span><span>SANVIO <b>GAMES</b></span></a><p>Play beyond limits. Built for curious minds and high-score chasers.</p></div><div class="footer-column"><b>EXPLORE</b><a href="#games">All games</a><a href="#categories">Categories</a><a href="#leaderboard">Leaderboard</a></div><div class="footer-column"><b>DISCOVER</b><a href="#how-to-play">How to play</a><a href="#community">Community</a><a href="mailto:hello@sanvio.com">Contact</a></div><div class="footer-column"><b>THE SANVIO PROMISE</b><span>Quick to start</span><span>Made for every screen</span><span>Fun comes first</span></div></div><div class="footer-bottom section-shell"><span>© <span id="year"></span> SANVIO GAMES. All rights reserved.</span><span>PLAY FAIR. HAVE FUN.</span></div></footer><div class="toast" id="toast" role="status" aria-live="polite"></div><script src="js/app.js"></script></body></html>
